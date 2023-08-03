@@ -1,11 +1,15 @@
 import React from "react";
 
-function Greet() {
+function Greet(props) {
   return (
-    <h1>
-      Hello Nikhil, this is your first React App. Welcome to frontend. Bdw How
-      was your backend journey ?
-    </h1>
+    <div>
+      {" "}
+      <h1>
+        Hello {props.name}, this is your first {props.framework}App. Welcome to
+        frontend. Bdw How was your backend journey ?
+      </h1>
+      {props.children}
+    </div>
   );
 }
 
